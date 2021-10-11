@@ -1,0 +1,98 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    font-size: 25px;
+}
+*{
+    box-sizing: border-box;
+}
+em{
+    color: yellow;
+}
+#wrapper{
+    margin: 0;
+}
+#nav-bar{
+    display: flex;
+    position: sticky;
+    position: -webkit-sticky;
+    justify-content: flex-end;
+    top: 0;
+    background-color: #000080;
+}
+#nav-bar a{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px;
+}
+#nav-bar a:hover{
+    color: #008080;
+}
+
+#quotes{
+    overflow:auto;
+    background: url("https://wallpaperaccess.com/full/1761712.jpg") no-repeat;
+    background-size: cover;
+    background-position: top;
+    min-height: 600px;
+    text-align: center;
+}
+#quotes h2{
+    margin: 200px 0;
+}
+
+#about{
+    color: #ffffff;
+    text-align: center;
+    background-color: aqua;
+    line-height: 100px;
+}
+#about h2{
+    margin: 0;
+}
+
+/*contact section*/
+input[type="text"], textarea{
+    display: block;
+    padding-bottom: 10px;
+    border: none;
+    border-bottom: 1px solid green;
+    margin-bottom: 40px;
+    width: 100%;
+    font-size: 20px;
+}
+#contact{
+    margin: 0 auto;
+}
+#info-about-sender{
+    background-color: white;
+    margin: 50px 300px;
+}
+#social-media-accounts{
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+}
+button{
+    color: #ffffff;
+    background-color: rgb(26, 188, 156);
+    font-size: 20px;
+    padding: 20px 30px;
+    border: 0.5px solid;
+    border-radius: 8px;
+}
+/*Icons*/
+#social-media-accounts{
+    margin: 0;
+    background-color: violet;
+}
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+}
