@@ -23,8 +23,8 @@ em{
 #nav-bar a{
     color: white;
     text-decoration: none;
-    padding: 10px;
-    margin: 10px;
+    padding: 7px;
+    margin: 8px;
 }
 #nav-bar a:hover{
     color: #008080;
@@ -42,14 +42,32 @@ em{
     margin: 200px 0;
 }
 
+/*About section*/
 #about{
     color: #ffffff;
     text-align: center;
     background-color: aqua;
-    line-height: 100px;
+    line-height: 50px;
 }
-#about h2{
+#about h2, h4{
     margin: 0;
+}
+
+/*projects section*/
+figure{
+    text-align: center;
+    border: 4px solid yellow;
+    border-radius: 8px;
+}
+#projects-wrapper{
+    background-color: red;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+#projects figure img{
+    width: 500px;
+    height: 500px;
 }
 
 /*contact section*/
