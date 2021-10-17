@@ -40,6 +40,7 @@ em{
 }
 #quotes h2{
     margin: 200px 0;
+    font-weight: 800;
 }
 
 /*About section*/
@@ -48,11 +49,12 @@ em{
     text-align: center;
     background-color: aqua;
     line-height: 50px;
+    font-weight: 800;
 }
 #about h2, h4{
-    margin: 0;
+    font-size: 60px;
+    padding: 40px 0;
 }
-
 /*projects section*/
 figure{
     text-align: center;
@@ -71,21 +73,18 @@ figure{
 }
 
 /*contact section*/
-input[type="text"], textarea{
-    display: block;
-    padding-bottom: 10px;
-    border: none;
-    border-bottom: 1px solid green;
-    margin-bottom: 40px;
-    width: 100%;
-    font-size: 20px;
-}
 #contact{
-    margin: 0 auto;
 }
-#info-about-sender{
-    background-color: white;
-    margin: 50px 300px;
+#message-container{
+    display:block;
+    width:50%;
+    margin:0 auto;
+    font-size: 17px;
+}
+.form-control{
+    border: none;
+    border-bottom: 3px solid green;
+    border-radius: 0;
 }
 #social-media-accounts{
     display: flex;
@@ -95,6 +94,7 @@ input[type="text"], textarea{
 button{
     color: #ffffff;
     background-color: rgb(26, 188, 156);
+    margin: 5px 0;
     font-size: 20px;
     padding: 20px 30px;
     border: 0.5px solid;
