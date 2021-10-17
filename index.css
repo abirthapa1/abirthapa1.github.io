@@ -116,7 +116,7 @@ button{
 }
 
 /*responsive for phone*/
-@media(max-width: 376px) {
+@media(max-width: 515px) {
     #about h2, h4{
         font-size: 45px;
     }
