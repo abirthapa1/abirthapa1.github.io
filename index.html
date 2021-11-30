@@ -30,26 +30,62 @@
         </header>
 
         <section id="projects">
-            <span>Projects</span>
+            <h2>Projects</h2>
             <div id="projects-wrapper">
                 <figure>
-                    <img src="https://images5.alphacoders.com/587/thumb-1920-587597.jpg" alt="tribute page">
-                    <figcaption>Tribute Page</figcaption>
+                    <img src="tributePage.png" alt="tribute page">
+                    <figcaption>
+                        <a class="source-code" href="https://github.com/abirthapa1/webpage_Projects/tree/master/tributePage">
+                            Tribute Page(github)
+                        </a>
+                    </figcaption>
+                    <figcaption>
+                        <a class="source-code" href="https://codepen.io/masterrunner1/pen/mdWaROW">
+                            Tribute Page(codepen)
+                        </a>
+                    </figcaption>
                 </figure>
 
                 <figure>
-                    <img src="https://wallpapersflix.com/anime/wp-content/uploads/2020/07/Anime-Background-For-Computer.jpg" alt="Technical Documentation Page">
-                    <figcaption>Techinical Documentation Page</figcaption>
+                    <img src="technicalDocumentation.png" alt="Technical Documentation Page">
+                    <figcaption>
+                        <a class="source-code" href="https://github.com/abirthapa1/webpage_Projects/tree/master/jsDocumentationPage">
+                            Technical Documentation Page(github)
+                        </a>
+                    </figcaption>
+                    <figcaption>
+                        <a class="source-code" href="https://codepen.io/masterrunner1/pen/zYZQYVM">
+                            Technical Documentation Page(codepen)
+                        </a>
+                    </figcaption>
                 </figure>
 
                 <figure>
-                    <img src="https://images.hdqwalls.com/download/anime-cityscape-landscape-scenery-5k-r6-2048x1152.jpg" alt="Survey Form">
-                    <figcaption>Survey Form</figcaption>
+                    <img src="surveyForm.png" alt="Survey Form">
+                    <figcaption>
+                        <a class="source-code" href="https://github.com/abirthapa1/webpage_Projects/tree/master/surveyForm">
+                            Survey Form(github)
+                        </a>
+                    </figcaption>
+                    <figcaption>
+                        <a class="source-code" href="https://codepen.io/masterrunner1/pen/vYxvdzE">
+                            Survey Form(codepen)
+                        </a>
+                    </figcaption>
                 </figure>
 
                 <figure>
-                    <img src="https://images2.alphacoders.com/750/thumb-1920-750482.png" alt="Product Landing Page">
-                    <figcaption>Product Landing Page</figcaption>
+                    <img src="productLanding.png" alt="Product Landing Page">
+                    <figcaption>
+                        <a class="source-code" href="https://github.com/abirthapa1/webpage_Projects/tree/master/productLandingPage">
+                            Product Landing Page(github)
+                        </a>
+                    </figcaption>
+                    <figcaption>
+                        <a class="source-code" href="https://codepen.io/masterrunner1/details/KKWYZXr">
+                            Product Landing Page(codepen)
+                        </a>
+                    </figcaption>
                 </figure>
             </div>
         </section>
@@ -63,30 +99,62 @@
                         <label for="name">Full Name</label>
                     </div>
                     <div class="form-floating mb-3 mt-3">
-                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" required>
                         <label for="floatingInput">Email address</label>
                     </div>
                     
                     <div class="form-floating mb-3">
-                            <input type="text" class="form-control" placeholder="" required>
-                            <label for="name">Phone number</label>
+                        <input type="text" class="form-control" id="phoneNo" placeholder="" required>
+                        <label for="name">Phone number</label>
                     </div>
 
                     <div class="form-floating">
-                        <textarea class="form-control" id="comment" name="text" placeholder="Comment goes here" style="height: 100px"></textarea>
+                        <textarea class="form-control" id="comment" name="text" placeholder="Comment goes here" style="height: 100px" required></textarea>
                         <label for="message">Message</label>
                     </div> 
                     
-                    <button onclick="">Send</button>
+                    <button onclick="return formValidation();">Send</button>
+                    <div id ="demo">
+
+                    </div>
                 </form>
-            
-            <ul id="social-media-accounts">
-                <li><a class="fa fa-github" href="https://github.com/abirthapa1" target="_blank"></a></li>
-                <li><a class="fa fa-twitter" href="" target="_blank"></a></li>
-                <li><a class="fa fa-instagram"href="" target="_blank"></a></li>
-                <li><a class="fa fa-linkedin"href="https://www.linkedin.com/in/abirthapa/" target="_blank"></a></li>
-            </ul>
         </section>
+
+        <ul id="social-media-accounts">
+            <li><a class="fa fa-github" href="https://github.com/abirthapa1" target="_blank"></a></li>
+            <li><a class="fa fa-twitter" href="" target="_blank"></a></li>
+            <li><a class="fa fa-instagram"href="" target="_blank"></a></li>
+            <li><a class="fa fa-linkedin"href="https://www.linkedin.com/in/abirthapa/" target="_blank"></a></li>
+        </ul>
     </div>
+
+
+    <script>
+        function formValidation(){
+            var fullName = document.getElementById("fullName").value;
+            var email = document.getElementById("floatingInput").value;
+            var phone = document.getElementById("phoneNo").value;
+            var message = document.getElementById("comment").value;
+            var atposition = email.indexOf('@');
+            var dotposition = email.lastIndexOf('.');
+
+            if(fullName == "" || /[^a-zA-Z]/.test(fullName)){
+                alert("Full Name can't be left empty or don't enter a numeric value");
+                return false;
+            }else if(atposition < 1 || dotposition < atposition + 2 || dotposition + 2 >= email.length){
+                alert("Enter a valid email address");
+                return false;
+            }else if(phone.length != 10 || isNaN(phone)){
+                alert("Please enter a valid phone number");
+                return false;
+            }else if(message == "" || message == null){
+                alert("Please write a message");
+                return false;
+            }
+
+            return loadDoc();
+        }
+        
+    </script>
 </body>
 </html>
