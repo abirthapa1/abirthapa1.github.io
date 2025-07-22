@@ -91,21 +91,25 @@ export const workData = [
     title: "Portfolio website",
     description: "Web Design",
     bgImage: "/work-1.png",
+    link: "https://github.com/abirthapa1/abirthapa1.github.io",
   },
   {
     title: "Threat Aware SOC",
     description: "Kubernetes application",
     bgImage: "/work-2.png",
+    link: "https://github.com/arviiyer/c9-k8s-project",
   },
   {
     title: "Birthday Website",
     description: "Using typescript",
     bgImage: "/work-3.png",
+    link: "https://github.com/abirthapa1/birthday-choi",
   },
   {
     title: "EKS Automation",
     description: "CI/CD Pipeline",
     bgImage: "/work-4.png",
+    link: "https://github.com/josemaria02/DevOpsPipelineRepo",
   },
 ];
 
