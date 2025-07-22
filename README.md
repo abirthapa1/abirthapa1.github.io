@@ -10,7 +10,7 @@ This is a **personal portfolio website** built using **Next.js** and **Tailwind 
 
 ## 🌐 Live Demo
 
-Check out the live site here: [https://your-portfolio.vercel.app](https://abirthapa1-github-io.vercel.app/)
+Check out the live site here: [https://abirthapa1-github-io.vercel.app/](https://abirthapa1-github-io.vercel.app/)
 
 ## 📁 Features
 
