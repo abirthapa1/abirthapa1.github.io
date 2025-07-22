@@ -34,3 +34,9 @@ git clone https://github.com/abirthapa1/abirthapa1.github.io.git
 cd abirthapa1.github.io/portfolio
 npm install
 npm run dev
+```
+
+## You can find it locally on
+```bash
+http://localhost:3000/
+```
